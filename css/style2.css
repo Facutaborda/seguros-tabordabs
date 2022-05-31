@@ -1,0 +1,38 @@
+
+#botonllamada{
+    border: 1px solid #C44536;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    color: #C44536;
+    font-style: italic;
+    padding: 8px;
+    padding-right: 14px;
+    padding-left: 12px;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+    #botonllamada:hover{
+    background-color: #C44536;
+    color: white;
+    border: 1px solid  #C44536;
+}
+.logo{
+    color: #3E92CC;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 3px;
+    margin: 0;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.logo:hover{
+    color: #C44536;
+}
+.navbb li a{
+    font-size: 1.5em;
+    color: black !important;
+}
+.navbb li a:hover {
+    color: #C44536 !important;
+}
