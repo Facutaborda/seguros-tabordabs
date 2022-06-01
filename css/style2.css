@@ -42,7 +42,13 @@ body{
 .carousel-inner {
     max-height: 39rem;
 }
-
+#imgindex{
+    max-width: 30rem;
+}
+#contenedorindeximg{
+    margin: auto;
+    justify-content: center;
+} */
 
 
 @media (max-width:768px){
