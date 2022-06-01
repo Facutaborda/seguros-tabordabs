@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,147 +13,85 @@
 </head>
 
 <body>
-    <header id="newheader">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="logo" href="./index.html">Facundo Taborda</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class=" navbb navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="./pages/personal.html">Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/personal.html">Empresas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/personal.html">Contacto</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                Cliente
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="/pages/cliente.html#fpago">Formas de Pago</a></li>
+                                <li><a class="dropdown-item" href="/pages/cliente.html#qsiniestro">Siniestro</a></li>
+                                <li><a class="dropdown-item" href="/pages/cliente.html#suger">Sugerencias</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="/pages/cliente.html#curriculim">Formá parte</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <div class="d-flex">
+                        <a href="Tel:3518080587" class="btn btn-lg btn-primary" id="botonllamada">3518080587</a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-
-
-    <header class="a">
-        <div class="navbar">
-            <p class="logo">Facundo Taborda</p>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="./pages/personal.html">Personal</a></li>
-                    <li><a href="./pages/empresas.html">Empresas</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/cliente.html">Cliente</a></li>
-                </ul>
-            </nav>
-            <a href="Tel:3518080587" class="animate__animated animate__headShake" id="botonllamada">3518080587</a>
-        </div>
-    </header>
-
-    <main class="cajaprincipalindex">
-        <div class="slidecontainer">
-            <h1>Facundo Taborda</h1>
-            <h2>Productor Asesor Matricula N° 99.217 </h2>
-        </div>
-        <div class="cajaprincipalindex-contenedor">
-            <div class="img_personal">
-                <img src="./img/Foto.jpeg" alt="Foto Personal">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/1.png" class="d-block w-100" alt="shield">
             </div>
-            <div class="cajaprincipalindex-texto">
-                <h3 class="cajaindex__titulo">Mis Servicios</h3>
-                <P class="cajaindex__p">Como Productor Asesor me especializo en seleccionar el mejor seguro para cubrir
-                    tus
-                    riesgos, asi sea para tus bienes y patrimonio, como para tu vida y familia.
-                    Me voy a encargar de entender tu contexto personal, familiar y económico, analizarlo y brindarte una
-                    solución a tu medida para satisfacer tus distintas necesidades.
-                </P>
-                <ul class="cajaindex__ul" !important>
-                    <li>Planificación financiera</li>
-                    <li>Tranquilidad en las gestiones</li>
-                    <li>Vision Familar</li>
-                    <li>Costos mas eficientes</li>
-                </ul>
-                <form action="./pages/contacto.html">
-                    <button class="cajaservicios__btn">Contactame</button>
-                </form>
+            <div class="carousel-item">
+                <img src="/img/2.png" class="d-block w-100" alt="automano">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/3.png" class="d-block w-100" alt="familia">
             </div>
         </div>
-        <div class="slidetitulo">
-            <h2>Soluciones</h2>
-        </div>
-        <div class="cajaserviciosindex">
-            <div class="contenedorindex-servicios">
-                <div class="card">
-                    <div class="cajaindex__servicio">
-                        <h3>Vehículos</h3>
-                        <img src="./img/vehiculo.jpg" alt="auto" width="100px">
-                        <p>La mejor cobertura</p>
-                        <a class="cajaservicios__btn" href="./pages/contacto.html">Cotizá</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cajaindex__servicio">
-                        <h3>Familia</h3>
-                        <img src="./img/hogar.jpg" alt="hogar" width="100px">
-                        <p>Coberturas Integrales</p>
-                        <a class="cajaservicios__btn" href="./pages/contacto.html">Cotizá</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cajaindex__servicio">
-                        <h3>Comercios</h3>
-                        <img src="./img/empresa.jpg" alt="empresa" width="100px">
-                        <p>Optimizá tus gastos</p>
-                        <a class="cajaservicios__btn" href="./pages/contacto.html">Cotizá</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="w-50 mx-auto text-center pt-5" id="intro">
+        <h1>Facundo Taborda</h1>
+        <h2>Productor Asesor <span class="text-primary">Matricula N° 99.217</span></h2>
+    </section>
 
-    <footer class="cajafooter">
-        <div class="cajafooter__contenedor">
-            <ul class="cajafooter__lista_redes">
-                <li><a href="https://instagram.com/facutabordaa">Instagram</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100002061856217">Facebook</a></li>
-                <li><a href="https://twitter.com/Facundo89262996">Twitter</a></li>
-            </ul>
-            <p>&copy; TabordaFacundo 2022</p>
-            <div class="cajafooter__nav">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="./pages/personal.html">Personal</a></li>
-                    <li><a href="./pages/empresas.html">Empresas</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/cliente.html">Cliente</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>

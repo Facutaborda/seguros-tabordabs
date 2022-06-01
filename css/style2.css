@@ -1,4 +1,7 @@
-
+body{
+    font-family: 'Roboto', 'Segoe UI', Oxygen, Ubuntu, Cantarell,'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
 #botonllamada{
     border: 1px solid #C44536;
     border-radius: 5px;
@@ -35,4 +38,15 @@
 }
 .navbb li a:hover {
     color: #C44536 !important;
+}
+.carousel-inner {
+    max-height: 39rem;
+}
+
+
+
+@media (max-width:768px){
+    #intro{
+        width: 90% !important;
+    }
 }
