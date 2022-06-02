@@ -59,61 +59,82 @@
             </div>
         </nav>
     </header>
-    <main class="b">
+    <main>
         <div>
             <div class="slideprincipal" 
             style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),url(../img/3.png); ;">
                 <div>
-                    <h1>CONTACTO</h1>
+                    <h1 class="fs-1">CONTACTO</h1>
                 </div>
             </div>
         </div>
-        <div class="contactocaja2">
-            <div class="contactocontenedor">
-                <h3>Ubicacion</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum ipsum aliquid explicabo eveniet
-                </p>
-                <h3>Datos de Contacto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat!</p>
+
+
+
+
+
+
+        <div class="container-fluid row">
+            <div class="col-md-6 col-lg-6 my-4 d-flex-column justify-content-center">
+                <h3 class="titulos22 fs-2">Ubicacion</h3>
+                <p class="fs-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum ipsum aliquid explicabo eveniet</p>
+                <h3 class="titulos22 fs-2">Datos de Contacto</h3>
+                <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat!</p>
             </div>
-            <div class="formulario">
+            <div class="col-md-6 col-lg-6 my-4">
                 <form action="">
                     <div class="primeros">
-                        <input type="text" name="name" id="name" placeholder="Nombre">
-                        <input type="text" name="lastname" id="lastname" placeholder="Apellido">
-                        <input type="number" name="number" id="number" placeholder="Numero de telefono">
-                        <input type="email" name="email" id="email" placeholder="email"><br>
+                        <input class="form-control my-2" type="text" name="name" id="name" placeholder="Nombre">
+                        <input class="form-control my-2" type="text" name="lastname" id="lastname" placeholder="Apellido">
+                        <input class="form-control my-2" type="number" name="number" id="number" placeholder="Numero de telefono">
+                        <input class="form-control my-2" type="email" name="email" id="email" placeholder="email"><br>
                         <div class="cliente">
-                            <label for="asegurado">¿Eres cliente?</label>
-                            <input type="radio" id="Asegurado" name="Asegurado">
+                            <label class="form-label" for="asegurado">¿Eres cliente?</label>
+                            <input class="form-check-input" type="radio" id="Asegurado" name="Asegurado">
                             <label for="">Si</label>
-                            <input type="radio" id="Asegurado" name="Asegurado">
+                            <input class="form-check-input"  type="radio" id="Asegurado" name="Asegurado">
                             <label for="">No</label>
                         </div>
                     </div>
                     <div class="segundos">
-                        <textarea name="consulta" id="consulta" cols="30" rows="5"
+                        <textarea class="form-control" name="consulta" id="consulta" cols="30" rows="5"
                             placeholder="Consulta.."></textarea><br>
-                        <label for="medio">Medio de contacto</label>
-                        <select name="medio" id="medio">
+                        <label class="form-label" for="medio">Medio de contacto</label>
+                        <select class="form-select" name="medio" id="medio">
                             <option value="number">Teléfono</option>
                             <option value="email">Mail</option>
                             <option value="Whatsapp">Whatsapp</option>
                         </select>
-                        <input type="submit" value="Enviar" class="cajaservicios__btn">
+                        <input class="btn btn-primary botonnormalindex mt-2" type="submit" value="Enviar" class="cajaservicios__btn">
                     </div>
                 </form>
             </div>
         </div>
-        <div class="mapagoogle">
-            <h3>Oficina</h3>
+        <div class="container-fluid d-flex-column justify-content-center align-items-center text-center mx-auto ">
+            <h3 class="fs-1 titulos22 my-3">Oficina</h3>
             <div class="contenedormapa">
-                <iframe
+                <iframe class="w-100 p-4"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13618.287479926636!2d-64.189343512055!3d-31.425919803870155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a291a6c877c7%3A0x8e01213c2a4ec7f8!2zUGFyYW7DoSA2NTcsIFg1MDAwIEhYTSwgQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1650993230971!5m2!1ses-419!2sar"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">Oficina</iframe>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
     <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
         <div class="footer2">
