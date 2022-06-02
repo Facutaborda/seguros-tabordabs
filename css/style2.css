@@ -105,14 +105,40 @@ footer:hover{
 footer a:hover{
     color: #C44536;
 }
-
-
+/* ==============PERSONAL========*/
+.slideprincipal{
+    background-size: cover;
+    min-height: 40vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-position : center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slideprincipal ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.slideprincipal li{
+    padding: 0 10px;
+}
 
 @media (max-width:768px){
     #intro{
         width: 90% !important;
     }
-
+    .slideprincipal{
+        min-height: 25vh;
+    }
+    .slideprincipal h1,li{
+        font-size:small;
+        font-weight: normal !important;
+    }
 }
 @media (min-width: 768px){
     footer ul{
