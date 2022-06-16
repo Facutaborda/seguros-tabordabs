@@ -1,3 +1,135 @@
-*{
-    background-color: aqua;
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+.titulo {
+    color: map-get($colors, tercero);
+    padding: 2px;
+    margin: 5px 0;
+}
+
+.carousel-inner {
+    max-height: 30rem;
+    background-position: center;
+}
+
+h1 {
+    color: map-get($colors, tercero);
+}
+
+h2 {
+    @extend .titulo;
+    font-size: 1.2em;
+}
+
+.slideSecundario {
+    @include position(flex, column, center, center, center);
+    margin: auto;
+    width: 90vw;
+    padding: 4px;
+    margin-top: 4px;
+
+    img {
+        width: 90vw;
+        max-width: 300px;
+    }
+
+    h3 {
+        @extend .titulo;
+        font-size: 2.3rem;
+    }
+
+    ul {
+        list-style: none;
+        font-weight: bold;
+    }
+
+    button {
+        @include btnclassic();
+        margin: 15px 0px;
+        font-size: 20px;
+
+    }
+}
+
+.tercerSlide {
+    @include position(flex, column, center, center, center);
+
+    div {
+        h2 {
+            @extend .titulo;
+            font-size: 2rem;
+            margin: 20px 0px;
+        }
+    }
+
+    .card {
+
+        border-radius: 20px;
+        background: #f5f5f5;
+        border: 2px solid #c3c6ce;
+        transition: 0.5s ease-out;
+        overflow: visible;
+        margin: 20px 0;
+        width: 80vw;
+        height: 400px;
+
+        &:hover {
+            border-color: map-get($colors, tercero);
+            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+
+        }
+
+        div {
+            img {
+                width: 80%;
+                border-radius: 20px;
+                margin-top: 15px;
+
+            }
+        }
+
+        div {
+            height: 50%;
+            @include position(flex, column, center, center, center);
+            h3 {
+                color: map-get($colors, segundo);
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.2em;
+                margin: 10px
+            }
+
+            a {
+                @include btnclassic();
+                margin: 5px 0px;
+            }
+        }
+    }
+
+    @media screen and (min-width:#{$tablets}) {
+        .cardcc {
+            @include position(flex, row, center, center, center);
+
+            .card {
+                width: 30vw;
+                height: auto;
+                margin: 15px 10px;
+            }
+        }
+    }
 }

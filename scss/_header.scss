@@ -1,0 +1,43 @@
+#botonllamada {
+    border: 1px solid map-get($colors, tercero);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    color: map-get($colors, tercero);
+    font-style: italic;
+    padding: 8px;
+    padding-right: 14px;
+    padding-left: 12px;
+    text-decoration: none;
+    margin: 0px 10px;
+
+    &:hover {
+        background-color: map-get($colors, tercero);
+        color: white;
+        border: 1px solid map-get($colors, tercero);
+    }
+}
+
+.logo {
+    color: #3E92CC;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 3px;
+    margin: 0;
+    margin-right: 20px;
+    text-decoration: none;
+
+    &:hover {
+        color: #C44536;
+    }
+}
+
+.navbb{
+    li, a{
+        font-weight: bold;
+        color: map-get($colors, cuarto) !important;
+        &:hover{
+            color: map-get($colors, tercero) !important;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import 'mixins';
+
+footer {
+    grid-area: footer;
+    background-color: map-get($colors, segundo);
+    @include position(flex, column, center, center, center);
+    transition: 0.5s;
+
+    &:hover {
+        background-color: lightblue;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 4px;
+
+        &:hover {
+            color: map-get($colors, tercero);
+        }
+    }
+
+    p,
+    div {
+        margin: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 6px;
+    }
+
+    @media screen and (min-width:#{$tablets}) {
+        font-size: 1em;
+        
+        p {
+            margin: auto;
+        }
+        div{
+            
+            ul{
+                @include position(flex, row, center, center, center);   
+            }
+        }
+    }
+
+}
