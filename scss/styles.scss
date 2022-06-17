@@ -2,6 +2,7 @@
 @import 'header';
 @import 'footer';
 @import 'mixins';
+@import 'specialSlide';
 
 * {
     margin: 0;
@@ -34,6 +35,56 @@ h2 {
     font-size: 1.2em;
 }
 
+.slideprincipal {
+    @include position(flex, column, center, center, center);
+    color: white;
+    width: 100vw;
+    height: 40vh;
+    max-height: 50vh;
+
+
+    ul {
+        list-style: none;
+        margin: auto;
+        padding: 0;
+    }
+
+    background: {
+        image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/3.png);
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
+
+    h1 {
+        color: white;
+        font-size: 2em;
+        padding: 4px;
+    }
+
+    h2 {
+        color: white;
+        font-size: 1.3em;
+    }
+
+    @media screen and (min-width:#{$tablets}) {
+        font-size: 1.3em;
+        height: 40vh;
+
+        ul {
+            @include position(flex, row, center, center, center);
+
+            li {
+                padding: 10px;
+            }
+        }
+    }
+    @media screen and (min-width:#{$desktop}){
+            height: 400px;
+            max-height: 1000px
+    }
+}
+
 .slideSecundario {
     @include position(flex, column, center, center, center);
     margin: auto;
@@ -43,7 +94,7 @@ h2 {
 
     img {
         width: 90vw;
-        max-width: 300px;
+        max-width: 600px;
     }
 
     h3 {
@@ -60,12 +111,20 @@ h2 {
         @include btnclassic();
         margin: 15px 0px;
         font-size: 20px;
-
     }
+    @media screen and (min-width:#{$desktop}){
+        max-width: 1100px;
+}
+}
+
+.btnContact {
+    @include btnclassic();
+
 }
 
 .tercerSlide {
     @include position(flex, column, center, center, center);
+    margin: auto;
 
     div {
         h2 {
@@ -85,6 +144,7 @@ h2 {
         margin: 20px 0;
         width: 80vw;
         height: 400px;
+        max-width: 389px;
 
         &:hover {
             border-color: map-get($colors, tercero);
@@ -94,7 +154,7 @@ h2 {
 
         div {
             img {
-                width: 80%;
+                width: 250px;
                 border-radius: 20px;
                 margin-top: 15px;
 
@@ -104,6 +164,7 @@ h2 {
         div {
             height: 50%;
             @include position(flex, column, center, center, center);
+
             h3 {
                 color: map-get($colors, segundo);
                 font-size: 2em;
@@ -111,25 +172,62 @@ h2 {
 
             p {
                 font-size: 1.2em;
-                margin: 10px
+                margin: 5px
             }
 
             a {
                 @include btnclassic();
-                margin: 5px 0px;
+                margin-bottom: 5px;
             }
         }
     }
 
     @media screen and (min-width:#{$tablets}) {
         .cardcc {
-            @include position(flex, row, center, center, center);
+            width: 90vw;
+            height: auto;
+            @include position(flex, column, center, center, center);
 
             .card {
-                width: 30vw;
+                @include position(flex, row, center, center, center);
+                width: 100%;
                 height: auto;
+                padding: 10px;
                 margin: 15px 10px;
+
+                div {
+                    width: 50%;
+                    height: 90%;
+
+                    img {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+
+                div {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:#{$desktop}) {
+        max-width: 1100px;
+        .cardcc{
+            @include position(flex, row, center, center, center);
+            height: 500px;
+            .card{
+                @include position(flex, column, center, center, center);
+                height: 400px;
+                div{
+                    width: 80%;
+                    img{
+                        width: 100%;
+                    }
+                }
             }
         }
     }
 }
+@import 'specialSlide';

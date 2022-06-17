@@ -1,7 +1,6 @@
 @import 'mixins';
 
 footer {
-    grid-area: footer;
     background-color: map-get($colors, segundo);
     @include position(flex, column, center, center, center);
     transition: 0.5s;
@@ -43,7 +42,7 @@ footer {
             margin: auto;
         }
         div{
-            
+
             ul{
                 @include position(flex, row, center, center, center);   
             }
